@@ -7,7 +7,7 @@ public class TestGaulois {
 	public static void main(String[] args) {
 		
 		Gaulois asterix = new Gaulois("Asterix",8);
-		System.out.println("Nom du Gaulois : " + asterix.getnom()); 
+		System.out.println("Nom du Gaulois : " + asterix.getNom()); 
 		asterix.parler("oui");
 		
 		Romain minus = new Romain("Minus",6);
