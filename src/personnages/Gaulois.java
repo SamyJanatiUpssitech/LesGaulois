@@ -1,22 +1,13 @@
 package personnages;
 
-public class Gaulois {
+public class Gaulois extends Personnage{
 
-	private String nom;
-	private int force;
 	
 	public Gaulois(String nom, int force) {
-		this.nom = nom;
-		this.force = force;
+		super(nom, force);
 	}
 	
-	public String getnom() {
-		return nom;
-	}
 	
-	public void parler(String paroles) {
-		System.out.println("Le gaulois " + nom + " : « " + paroles + ".»");
-	}
 	
 	public void frapper(Romain romain) {
 		int nvlforce = this.force /3;
@@ -28,6 +19,14 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Asterix",8);
 		System.out.println("Nom du Gaulois : " + asterix.getnom()); 
 		
+	}
+
+
+
+	@Override
+	protected String donnerAuteur() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
