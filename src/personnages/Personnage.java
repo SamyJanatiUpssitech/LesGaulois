@@ -17,12 +17,12 @@ public abstract class Personnage {
 	protected abstract String donnerAuteur();
 	
 	public void parler(String paroles) {
-		System.out.println( "Le " + donnerAuteur() + nom + " : « " + paroles + ".»");
+		System.out.println( "Le " + donnerAuteur() + nom + " : ï¿½ " + paroles + ".ï¿½");
 	}
 
 	public void frapper(Personnage personnage) {
 		int nvlforce = this.force /3;
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + personnage.getNom()  );
+		System.out.println(nom + " envoie un grand coup dans la mï¿½choire de " + personnage.getNom()  );
 		personnage.recevoirCoup(nvlforce);
 	}
 
@@ -34,7 +34,7 @@ public abstract class Personnage {
 			this.force = 0 ;
 			this.parler("J'abandonne");
 		}
-		else this.parler("Aïe");
+		else this.parler("Aie");
 		
 	}
 
